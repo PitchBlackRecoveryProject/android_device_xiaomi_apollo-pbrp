@@ -33,6 +33,7 @@ system                                     /system         ext4    ro,barrier=1,
 vendor                                     /vendor         ext4    ro,barrier=1,discard                                            wait,avb,first_stage_mount
 product                                    /product        ext4    ro,barrier=1,discard                                            wait,avb=vbmeta_system,first_stage_mount
 odm                                        /odm            ext4    ro,barrier=1,discard                                            wait,avb,first_stage_mount
+/dev/block/mapper/system		   /system_image   emmc    ro,barrier=1,discard						   wait,avb,first_stage_mount
 /dev/block/bootdevice/by-name/cust         /cust           ext4    ro,nosuid,nodev,barrier=1,data=ordered                          wait,check
 /dev/block/bootdevice/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                     wait,check
 /dev/block/by-name/metadata                /metadata       ext4    noatime,nosuid,nodev,discard                                    wait,formattable,wrappedkey,first_stage_mount
