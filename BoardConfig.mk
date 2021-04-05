@@ -141,6 +141,7 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_METADATA_PARTITION := true
+USE_FSCRYPT := true
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
